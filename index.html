@@ -6,157 +6,233 @@
 <title>Carrot Cake pentru Bebeluși</title>
 
 <style>
-    body {
-        font-family: 'Segoe UI', sans-serif;
-        background: linear-gradient(to right, #fff3e6, #ffe0cc);
-        margin: 0;
-        padding: 20px;
-    }
+:root {
+    --primary: #ff8c42;
+    --bg: #fffaf5;
+    --card: #ffffff;
+    --text: #333;
+    --soft: #f3e5dc;
+}
 
-    h1 {
-        text-align: center;
-        color: #e67e22;
-        margin-bottom: 30px;
-    }
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
 
-    .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-    }
+header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
 
-    .card {
-        background: white;
-        border-radius: 15px;
-        padding: 20px;
-        box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+h1 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 32px;
+}
 
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 20px rgba(0,0,0,0.15);
-    }
+.subtitle {
+    color: #777;
+    margin-top: 10px;
+}
 
-    .title {
-        font-size: 18px;
-        font-weight: bold;
-        color: #d35400;
-        margin-bottom: 10px;
-    }
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
 
-    .tag {
-        display: inline-block;
-        background: #fdebd0;
-        color: #a04000;
-        padding: 5px 10px;
-        border-radius: 20px;
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
+.card {
+    background: var(--card);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transition: 0.25s;
+}
 
-    ul {
-        padding-left: 18px;
-    }
+.card:hover {
+    transform: translateY(-4px);
+}
 
-    .prep {
-        margin-top: 10px;
-        font-size: 14px;
-    }
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.tag {
+    display: inline-block;
+    background: var(--soft);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.section {
+    margin-top: 15px;
+}
+
+.section h3 {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+ul, ol {
+    padding-left: 18px;
+    font-size: 14px;
+}
+
+ol li {
+    margin-bottom: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+    color: #999;
+}
 </style>
 </head>
 
 <body>
 
-<h1>🥕 Carrot Cake pentru Bebeluși</h1>
+<header>
+    <h1>🥕 Carrot Cake pentru Bebeluși</h1>
+    <div class="subtitle">Rețete sănătoase, fără zahăr, adaptate celor mici</div>
+</header>
 
 <div class="container">
 
-    <div class="card">
-        <div class="title">Mini Deliciu Clasic</div>
-        <div class="tag">6+ luni • simplu</div>
+<!-- RETETA 1 -->
+<div class="card">
+    <div class="title">Mini Deliciu Clasic</div>
+    <div class="tag">6+ luni • echilibrat</div>
+
+    <div class="section">
+        <h3>Ingrediente</h3>
         <ul>
-            <li>2 morcovi rași</li>
+            <li>2 morcovi mici rași fin</li>
             <li>1 ou</li>
             <li>2 linguri făină de ovăz</li>
-            <li>1 lingură iaurt</li>
+            <li>1 lingură iaurt natural</li>
         </ul>
-        <div class="prep">
-            Amestecă ingredientele și coace la 180°C timp de 20-25 min.
-        </div>
     </div>
 
-    <div class="card">
-        <div class="title">Dulce Natural cu Măr</div>
-        <div class="tag">fără zahăr • fructat</div>
+    <div class="section">
+        <h3>Pași de preparare</h3>
+        <ol>
+            <li>Preîncălzește cuptorul la 180°C.</li>
+            <li>Curăță morcovii și rade-i foarte fin.</li>
+            <li>Bate oul într-un bol până devine omogen.</li>
+            <li>Adaugă morcovul, făina și iaurtul.</li>
+            <li>Amestecă până obții o compoziție moale.</li>
+            <li>Toarnă într-o formă mică (silicon ideal).</li>
+            <li>Coace 20–25 minute până devine ușor auriu.</li>
+            <li>Lasă la răcit complet înainte de servire.</li>
+        </ol>
+    </div>
+</div>
+
+<!-- RETETA 2 -->
+<div class="card">
+    <div class="title">Dulce Natural cu Măr</div>
+    <div class="tag">fără zahăr • aromat</div>
+
+    <div class="section">
+        <h3>Ingrediente</h3>
         <ul>
             <li>1 morcov ras</li>
-            <li>1 măr ras</li>
+            <li>1 măr dulce ras</li>
             <li>1 ou</li>
             <li>3 linguri făină integrală</li>
         </ul>
-        <div class="prep">
-            Coace 25 min la 180°C. Mărul oferă dulceață naturală.
-        </div>
     </div>
 
-    <div class="card">
-        <div class="title">Pufos cu Banană</div>
-        <div class="tag">moale • ideal BLW</div>
+    <div class="section">
+        <h3>Pași de preparare</h3>
+        <ol>
+            <li>Preîncălzește cuptorul la 180°C.</li>
+            <li>Curăță mărul și morcovul, apoi rade-le fin.</li>
+            <li>Stoarce ușor excesul de suc din măr.</li>
+            <li>Bate oul separat.</li>
+            <li>Amestecă toate ingredientele.</li>
+            <li>Toarnă compoziția în formă.</li>
+            <li>Coace 25–30 minute.</li>
+            <li>Răcește complet înainte de servire.</li>
+        </ol>
+    </div>
+</div>
+
+<!-- RETETA 3 -->
+<div class="card">
+    <div class="title">Pufos cu Banană</div>
+    <div class="tag">BLW • foarte moale</div>
+
+    <div class="section">
+        <h3>Ingrediente</h3>
         <ul>
-            <li>1 banană coaptă</li>
+            <li>1 banană bine coaptă</li>
             <li>1 morcov ras</li>
             <li>1 ou</li>
             <li>2 linguri făină de ovăz</li>
         </ul>
-        <div class="prep">
-            Pasează banana, amestecă și coace 20-25 min.
-        </div>
     </div>
 
-    <div class="card">
-        <div class="title">Fără Ou – Alergie Friendly</div>
-        <div class="tag">vegan • fără ou</div>
+    <div class="section">
+        <h3>Pași de preparare</h3>
+        <ol>
+            <li>Preîncălzește cuptorul.</li>
+            <li>Pasează banana până devine cremă.</li>
+            <li>Adaugă oul și amestecă bine.</li>
+            <li>Încorporează morcovul și făina.</li>
+            <li>Amestecă până devine uniform.</li>
+            <li>Coace 20–25 minute.</li>
+            <li>Verifică cu scobitoarea (trebuie să iasă curată).</li>
+        </ol>
+    </div>
+</div>
+
+<!-- RETETA 4 -->
+<div class="card">
+    <div class="title">Fără Ou – Alergie Friendly</div>
+    <div class="tag">vegan • delicat</div>
+
+    <div class="section">
+        <h3>Ingrediente</h3>
         <ul>
             <li>2 morcovi rași</li>
             <li>1 banană</li>
             <li>3 linguri făină</li>
-            <li>scorțișoară (opțional)</li>
+            <li>un praf de scorțișoară (opțional)</li>
         </ul>
-        <div class="prep">
-            Coace 25-30 min la 180°C.
-        </div>
     </div>
 
-    <div class="card">
-        <div class="title">Energizant cu Ovăz și Iaurt</div>
-        <div class="tag">consistent • mic dejun</div>
-        <ul>
-            <li>2 linguri ovăz măcinat</li>
-            <li>1 morcov ras</li>
-            <li>1 ou</li>
-            <li>2 linguri iaurt</li>
-        </ul>
-        <div class="prep">
-            Ideal pentru mic dejun. Coace 20-25 min.
-        </div>
+    <div class="section">
+        <h3>Pași de preparare</h3>
+        <ol>
+            <li>Preîncălzește cuptorul la 180°C.</li>
+            <li>Pasează banana.</li>
+            <li>Adaugă morcovii și amestecă.</li>
+            <li>Încorporează făina treptat.</li>
+            <li>Adaugă scorțișoară dacă dorești.</li>
+            <li>Toarnă în formă mică.</li>
+            <li>Coace 25–30 minute.</li>
+            <li>Lasă să se răcească complet.</li>
+        </ol>
     </div>
-
-    <div class="card">
-        <div class="title">Super Moale cu Dovleac</div>
-        <div class="tag">extra cremos • toamnă</div>
-        <ul>
-            <li>1 morcov ras</li>
-            <li>2 linguri piure de dovleac</li>
-            <li>1 ou</li>
-            <li>2 linguri făină</li>
-        </ul>
-        <div class="prep">
-            Textură foarte moale, perfect pentru început. Coace 25 min.
-        </div>
-    </div>
+</div>
 
 </div>
+
+<footer>
+    Rețete potrivite pentru bebeluși • fără zahăr adăugat • adaptate diversificării
+</footer>
 
 </body>
 </html>
